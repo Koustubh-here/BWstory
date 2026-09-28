@@ -1,0 +1,15 @@
+# Copy the non-sensitive Gradle settings into android/gradle.properties,
+# then provide release signing values through a local, ignored Gradle properties file.
+org.gradle.jvmargs=-Xmx2048m -XX:MaxMetaspaceSize=512m
+android.useAndroidX=true
+reactNativeArchitectures=armeabi-v7a,arm64-v8a,x86,x86_64
+newArchEnabled=true
+hermesEnabled=true
+edgeToEdgeEnabled=false
+android.builtInKotlin=false
+android.newDsl=false
+
+MYAPP_RELEASE_STORE_FILE=YOUR_RELEASE_KEYSTORE_FILE
+MYAPP_RELEASE_KEY_ALIAS=YOUR_RELEASE_KEY_ALIAS
+MYAPP_RELEASE_STORE_PASSWORD=YOUR_PASSWORD_HERE
+MYAPP_RELEASE_KEY_PASSWORD=YOUR_PASSWORD_HERE

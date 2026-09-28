@@ -32,8 +32,19 @@ local.properties
 *.hprof
 .cxx/
 *.keystore
-!debug.keystore
+*.jks
 .kotlin/
+
+# Local credentials and service configuration
+**/gradle.properties
+!**/gradle.properties.example
+.env*
+!.env.example
+google-services.json
+GoogleService-Info.plist
+*.p12
+*.pem
+*.key
 
 # node.js
 #
